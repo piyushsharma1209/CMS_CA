@@ -2,7 +2,7 @@
 
 // This function makes a call to the WordPress REST API to retrieve the latest posts
 async function getPosts() {
-    const response = await fetch('http://piyushsharma.one/fedup/wp-json/wp/v2/posts');
+    const response = await fetch('https://piyushsharma.one/fedup/wp-json/wp/v2/posts');
     const posts = await response.json();
     return posts;
 }
