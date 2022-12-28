@@ -2,7 +2,7 @@
 
 // This function makes a call to the WordPress REST API to retrieve a specific post
 async function getPost(id) {
-    const response = await fetch(`http://piyushsharma.one/fedup/wp-json/wp/v2/posts/${id}`);
+    const response = await fetch(`https://piyushsharma.one/fedup/wp-json/wp/v2/posts/${id}`);
     const post = await response.json();
     return post;
 }
